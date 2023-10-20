@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form-style.css') }}">
+</head>
+<body>
+    <div class="main">
+       <h1>Breast Cancer</h1>
+       <div class="input-form">
+        <form action="{{ url_for('cancerpred')}}" method="post">
+
+            <!-- 1 -->
+            <div class="radius_mean">
+                <label for="radius_mean">
+                    Radius Mean :
+                    <input type="text" name="radius_mean" required>
+                </label>
+            </div>
+
+            <!-- 2 -->
+            <div class="texture_mean">
+                <label for="texture_mean">
+                    Texture Mean:
+                    <input type="text" name="texture_mean" required>
+                </label>
+            </div>
+
+            <!-- 3 -->
+            <div class="perimeter_mean">
+                <label for="perimeter_mean">
+                    Perimeter Mean :
+                    <input type="text" name="perimeter_mean" required>
+                </label>
+            </div>
+
+            <!-- 4 -->
+            <div class="area_mean">
+                <label for="area_mean">
+                     Area Mean :
+                    <input type="text" name="area_mean" required>
+                </label>
+            </div>
+
+            <!-- 5 -->
+            <div class="smoothness_mean">
+                <label for="smoothness_mean">
+                    Smoothness Mean :
+                    <input type="text" name="smoothness_mean" required>
+                </label>
+            </div>
+
+            <!-- 6 -->
+            <div class="compactness_mean">
+                <label for="compactness_mean">
+                    Compactness Mean :
+                    <input type="text" name="compactness_mean" required>
+                </label>
+            </div> 
+
+            <!-- 7 -->
+            <div class="concavity_mean">
+                <label for="concavity_mean">
+                    Concavity Mean :
+                    <input type="text" name="concavity_mean"  required>
+                </label>
+            </div>
+
+            <!-- 8 -->
+            <div class="concave_points_mean">
+                <label for="concave_points_mean">
+                    Concave points mean :
+                    <input type="text" name="concave_points_mean"  required>
+                </label>
+            </div>
+
+            <!-- 9 -->
+            <div class="symmetry_mean ">
+                <label for="symmetry_mean ">
+                    Symmetry Mean :
+                    <input type="text" name="symmetry_mean "  required>
+                </label>
+            </div>
+
+            <!-- 10 -->
+            <div class="fractal_dimension_mean">
+                <label for="fractal_dimension_mean">
+                     Fractal dimension mean :
+                    <input type="text" name="fractal_dimension_mean"  required>
+                </label>
+            </div>
+
+            <!-- 11 -->
+            <div class="radius_se">
+                <label for="radius_se">
+                    Radius_se :
+                    <input type="text" name="radius_se"  required>
+                </label>
+            </div>
+            <!-- 12 -->
+            <div class="texture_se">
+                <label for="texture_se">
+                    Texture_se :
+                    <input type="text" name="texture_se"  required>
+                </label>
+            </div>
+
+            <!-- 13 -->
+            <div class="perimeter_se">
+                <label for="perimeter_se">
+                    Perimeter_se :
+                    <input type="text" name="perimeter_se"  required>
+                </label>
+            </div>
+
+            <!-- 14 -->
+            <div class="area_se">
+                <label for="area_se">
+                    Area_ee :
+                    <input type="text" name="area_se"  required>
+                </label>
+            </div>
+
+            <!-- 15 -->
+            <div class="smoothness_se">
+                <label for="smoothness_se">
+                    Smoothness_se :
+                    <input type="text" name="smoothness_se"  required>
+                </label>
+            </div>
+            
+            <!-- 16 -->
+            <div class="compactness_se">
+                <label for="compactness_se">
+                    Compactness_se :
+                    <input type="text" name="compactness_se"  required>
+                </label>
+            </div>
+
+            <!-- 17 -->
+            <div class="concavity_se">
+                <label for="concavity_se">
+                    concavity_se :
+                    <input type="text" name="concavity_se
+                    "  required>
+                </label>
+            </div>
+
+
+            <!-- 18-->
+            <div class="concave_points_se">
+                <label for="concave_points_se">
+                    concave_points_se :
+                    <input type="text" name="concave_points_se"  required>
+                </label>
+            </div>
+
+            <!-- 19 -->
+            <div class="symmetry_se">
+                <label for="symmetry_se">
+                    Symmetry_se :
+                    <input type="text" name="symmetry_se"  required>
+                </label>
+            </div>
+
+            <!-- 20 -->
+            <div class="fractal_dimension">
+                <label for="fractal_dimension">
+                    Fractal_dimension :
+                    <input type="text" name="fractal_dimension"  required>
+                </label>
+            </div>
+
+            <!-- 21 -->
+            <div class="radius_worst">
+                <label for="radius_worst">
+                    Radius_worst :
+                    <input type="text" name="radius_worst"  required>
+                </label>
+            </div>
+
+            <!-- 22 -->
+            <div class="texture_worst">
+                <label for="texture_worst">
+                    Texture_worst :
+                    <input type="text" name="texture_worst"  required>
+                </label>
+            </div>
+
+            <!-- 23 -->
+            <div class="perimeter_worst">
+                <label for="perimeter_worst">
+                    perimeter_worst :
+                    <input type="text" name="perimeter_worst"  required>
+                </label>
+            </div>
+
+            <!-- 24 -->
+            <div class="area_worst">
+                <label for="area_worst">
+                    Area_worst :
+                    <input type="text" name="area_worst"  required>
+                </label>
+            </div>
+
+            <!-- 25 -->
+            <div class="smoothen_worst">
+                <label for="smoothen_worst">
+                    Smoothen_worst :
+                    <input type="text" name="smoothen_worst"  required>
+                </label>
+            </div>
+
+            <!-- 26 -->
+            <div class="compactness_worst">
+                <label for="compactness_worst">
+                    Compactness_worst :
+                    <input type="text" name="compactness_worst"  required>
+                </label>
+            </div>
+
+            <!-- 27 -->
+            <div class="concavity_worst">
+                <label for="concavity_worst">
+                    Concavity_worst :
+                    <input type="text" name="concavity_worst"  required>
+                </label>
+            </div>
+
+            <!-- 28 -->
+            <div class="concavity_point_worst">
+                <label for="concavity_point_worst">
+                    Concavity_point_worst :
+                    <input type="text" name="concavity_point_worst"  required>
+                </label>
+            </div>
+
+
+            <!-- 29 -->
+            <div class="symmetry_worst">
+                <label for="symmetry_worst">
+                    Symmetry_worst :
+                    <input type="text" name="symmetry_worst"  required>
+                </label>
+            </div>
+
+            <!-- 30 -->
+            <div class="fractal_dimension_worst">
+                <label for="fractal_dimension_worst">
+                    Fractal_dimension_worst :
+                    <input type="text" name="fractal_dimension_worst"  required>
+                </label>
+            </div>
+            <button type="submit">Submit</button>
+         </form>
+       </div>
+
+    </div>
+    <div class="container themed-container"><h1 style="text-align: center; color:black; font-size:2vmax;">{{ans}}</h1></div>
+    <p style="text-align: center; color:black; font-size:1vmax;">Click <a href="https://en.wikipedia.org/wiki/Breast_cancer">here</a> to learn more about Breast Cancer Disease</p>
+    <p style="text-align: center; color:black;font-size:1vmax;">&copy;MediPred.com</p>
+    </div>
+
+    </div>
+</body>
+</html>

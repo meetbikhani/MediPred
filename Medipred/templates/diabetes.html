@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form-style.css') }}">
+</head>
+<body>
+    <div class="main">
+       <h1>Diabetes</h1>
+       <div class="input-form">
+        <form action="{{ url_for('diabetespred')}}" method="post">
+
+            <div class="glucose">
+                <label for="glucose">
+                    Glucose Level :
+                    <input type="text" name="glucose" required>
+                </label>
+            </div>
+
+            <div class="bloodPressure">
+                <label for="bloodpressure">
+                    Blood Pressure :
+                    <input type="text" name="bloodpressure" required>
+                </label>
+            </div>
+
+            <div class="insulin">
+                <label for="insulin">
+                    Insulin Level :
+                    <input type="text" name="insulin"required>
+                </label>
+            </div>
+
+            <div class="bmi">
+                <label for="bmi">
+                     BMI :
+                    <input type="text" name="bmi" required>
+                </label>
+            </div>
+
+            <div class="pregnancies">
+                <label for="pregnancies">
+                    Pregnancies :
+                    <input type="text" name="pregnancies" required>
+                </label>
+            </div>
+
+            <div class="diabetesPedigreeFunction">
+                <label for="diabetesPedigreeFunction">
+                    Diabetes Pedigree Functionage :
+                    <input type="text" name="diabetesPedigreeFunction" required>
+                </label>
+            </div> 
+
+            <div class="skinThickness">
+                <label for="skinThickness">
+                    Skin Thickness :
+                    <input type="text" name="skinThickness"  required>
+                </label>
+            </div>
+
+             <div class="age">
+                <label for="age">
+                    Age :
+                    <input type="text" name="age"  required>
+                </label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+       </div>
+    </div>
+    <div class="container themed-container"><h1 style="text-align: center; color:black; font-size:2vmax;">{{ans}}</h1></div>
+    <p style="text-align: center; color:black; font-size:1vmax; ">Click <a href="https://en.wikipedia.org/wiki/Diabetes">here</a> to learn more about Diabetes Disease</p>
+    <p style="text-align: center; color:black; font-size:1vmax; ">&copy;MediPred.com</p>
+    </div>
+
+    </div>
+</body>
+</html>

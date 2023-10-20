@@ -1,0 +1,75 @@
+@media(max-width:1199.5px){
+
+    /*custom css*/
+    .card{
+    padding:2.5rem 1.875rem;
+
+}
+/* header */
+.header_wrapper .navbar-nav .nav-link{
+    font-size: 1rem;
+}
+/* top banner  */
+.banner_wrapper .animate-img .aimg1{
+    left:-3.125rem;
+}
+/* about */
+/* service */
+}
+
+@media(max-width:991px){
+    /* custom css */
+    .wrapper{
+        padding:3.125rem 0;
+    }
+    .main-btn{
+        font-size: .875rem;
+    }
+    h1{
+        font-size: 1.875rem;
+    }
+    h2{
+        font-size:1.875;
+    }
+    h3{
+        font-size: 1.5625;
+
+    }
+    h4{
+        font-size: 1.125rem;
+    }
+    P{
+        font-size: .875rem;
+        line-height: 1.35rem;
+
+    }
+    .card{
+        padding: 1.875rem 1rem;
+    }
+}
+
+/* navbar */
+.header-scrolled{
+    height: auto;
+}
+.header_wrapper .menu-navbar-nav{
+    text-align: center;
+
+}
+.header_wrapper .nav-item .nav-link{
+    margin-top: .9375rem;
+}
+
+/* banner */
+.banner_wrapper p{
+    max-width: 100%;
+}
+/* service */
+/* blog */
+/* footer */
+
+@media(max-width:360px){
+    /* banner */
+
+    /* about  */
+}  */
