@@ -105,3 +105,5 @@ def vectorpred():
 
     return render_template('vector.html', ans=f"We regret to inform you that you have been diagnosed with {predicted_class} disease.")
 
+if __name__=='__main__':
+   app.run(debug=True)
