@@ -1,0 +1,84 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, rgb(255, 255, 255),#9DAEFF);
+
+  }
+
+  .main {
+    width: 50%;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 6px;
+  }
+
+  h1 {
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(11, 11, 169);
+  }
+  
+  form {
+    width: 70%;
+    margin: 0 auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+  }
+  div {
+    margin-bottom: 10px;
+  }
+
+  p{
+    color: rgb(59, 57, 57);
+    font-size: 13px;
+    margin: 5px;
+    
+ }
+
+ul{
+    list-style: none;
+    margin: 0;
+    color: rgb(59, 57, 57);
+    font-size: 13px;
+    margin-left: -35px;
+
+}
+.input-form label {
+  display: block;
+  margin-bottom: 5px;
+  margin: 20px;
+  font-weight: 500;
+}
+  
+
+  input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px 0 ;
+  }
+
+  button[type="submit"] {
+    font-size: 16px;
+    background-color: rgb(50, 50, 216);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    
+  }
+  button[type="submit"]:hover {
+    background-color: rgb(12, 12, 169);
+  }
+  

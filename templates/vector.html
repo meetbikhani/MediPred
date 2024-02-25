@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector-Borne Disease</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form-style.css') }}">
+</head>
+<body>
+    <div class="main">
+       <h1>Vector-Borne Disease
+       </h1>
+       <div class="input-form">
+        <form action="{{ url_for('vectorpred')}}" method="post">
+
+            <!-- 1 -->
+            <div class="sudden_fever">
+                <label for="sudden_fever">
+                    Sudden Fever :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="sudden_fever" required>
+                </label>
+            </div>
+
+            <!-- 2 -->
+            <div class="headache">
+                <label for="headache">
+                    Headache :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="headache" required>
+                </label>
+            </div>
+
+            <!-- 3 -->
+            <div class="mouth_bleed">
+                <label for="mouth_bleed">
+                    Mouth Bleed :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="mouth_bleed"required>
+                </label>
+            </div>
+
+            <!-- 4 -->
+            <div class="nose_bleed">
+                <label for="nose_bleed">
+                    Nose Bleed :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="nose_bleed" required>
+                </label>
+            </div>
+
+            <!-- 5 -->
+            <div class="muscle_pain">
+                <label for="muscle_pains">
+                    Muscle Pain :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="muscle_pain" required>
+                </label>
+            </div>
+
+            <!-- 6 -->
+            <div class="joint_pain">
+                <label for="joint_pain">
+                    Joint Pain :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="joint_pain" required>
+                </label>
+            </div> 
+
+            <!-- 7 -->
+            <div class="vomiting">
+                <label for="vomiting">
+                    Vomiting :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="vomiting"  required>
+                </label>
+            </div>
+
+            <!-- 8 -->
+             <div class="rash">
+                <label for="rash">
+                    Rash :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="rash"  required>
+                </label>
+             </div>
+
+             <!-- 9 -->
+             <div class="diarrhea">
+                <label for="diarrhea">
+                    Diarrhea :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="diarrhea"  required>
+                </label>
+             </div>
+
+             <!-- 10 -->
+             <div class="hypotension">
+                <label for="hypotensionh">
+                    Hypotension :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="hypotension"  required>
+                </label>
+             </div>
+
+             <!-- 11 -->
+             <div class="pleural_effusion">
+                <label for="pleural_effusion">
+                    Pleural Effusion :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="pleural_effusion"  required>
+                </label>
+             </div>
+
+             <!-- 12 -->
+             <div class="ascites">
+                <label for="ascites">
+                    Ascites :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="ascites"  required>
+                </label>
+             </div>
+
+             <!-- 13 -->
+             <div class="gastro_bleeding">
+                <label for="gastro_bleeding">
+                    Gastro Bleeding :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="gastro_bleeding"  required>
+                </label>
+             </div>
+
+             <!-- 14 -->
+             <div class="swelling">
+                <label for="swelling">
+                    Swelling :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="swelling"  required>
+                </label>
+             </div>
+
+             <!-- 15 -->
+             <div class="nausea">
+                <label for="nausea">
+                    Nausea :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="nausea"  required>
+                </label>
+             </div>
+
+             <!-- 16 -->
+             <div class="chills">
+                <label for="chills">
+                    Chills :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="chills"  required>
+                </label>
+             </div>
+
+             <!-- 17 -->
+             <div class="myalgia">
+                <label for="myalgia">
+                    Myalgia :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="myalgia"  required>
+                </label>
+             </div>
+
+             <!-- 18 -->
+             <div class="digestion_trouble">
+                <label for="digestion_trouble">
+                    Digestion Trouble :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="digestion_trouble"  required>
+                </label>
+             </div>
+
+             <!-- 19 -->
+             <div class="fatigue">
+                <label for="fatigue">
+                    Fatigue :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="fatigue"  required>
+                </label>
+             </div>
+
+             <!-- 20 -->
+             <div class="skin_lesions">
+                <label for="skin_lesions">
+                    Skin Lesions :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="skin_lesions"  required>
+                </label>
+             </div>
+
+             <!-- 21 -->
+             <div class="stomach_pain">
+                <label for="stomach_pain">
+                    Stomach_pain :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="stomach_pain"  required>
+                </label>
+             </div>
+
+             <!-- 22 -->
+             <div class="orbital_pain">
+                <label for="orbital_pain">
+                    Orbital_pain :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="orbital_pain"  required>
+                </label>
+             </div>
+
+             <!-- 23 -->
+             <div class="neck_pain">
+                <label for="neck_pain">
+                    Neck_pain :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="neck_pain"  required>
+                </label>
+             </div>
+             
+             <!-- 24 -->
+             <div class="weakness">
+                <label for="weakness">
+                    Weakness :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="weakness"  required>
+                </label>
+             </div>
+
+
+            <!-- 25 -->
+            <div class="back_pain">
+                <label for="back_pain">
+                    Back Pain :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="back_pain"  required>
+                </label>
+             </div>
+
+             <!-- 26 -->
+             <div class="weight_loss">
+                <label for="weight_loss">
+                    Weight_loss :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="weight_loss"  required>
+                </label>
+             </div>
+
+             <!-- 27 -->
+             <div class="gum_bleed">
+                <label for="gum_bleed">
+                    Gum_bleed :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="gum_bleed"  required>
+                </label>
+             </div>
+
+             <!-- 28-->
+             <div class="jaundice">
+                <label for="jaundice">
+                    Jaundice :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="jaundice"  required>
+                </label>
+             </div>
+
+             <!-- 29 -->
+             <div class="coma">
+                <label for="coma">
+                    Coma :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="coma"  required>
+                </label>
+             </div>
+
+             <!-- 30 -->
+             <div class="diziness">
+                <label for="diziness">
+                    Diziness :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="diziness"  required>
+                </label>
+             </div>
+
+             <!-- 31 -->
+             <div class="inflammation">
+                <label for="inflammation">
+                    Inflammation :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="inflammation"  required>
+                </label>
+             </div>
+
+            <!-- 32 -->
+             <div class="red_eyes">
+                <label for="red_eyes">
+                    Red_eyes :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="red_eyes"  required>
+                </label>
+             </div>
+             
+            <!-- 33 -->
+            <div class="loss_of_appetite">
+                <label for="loss_of_appetite">
+                    Loss_of_appetite :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="loss_of_appetite"  required>
+                </label>
+             </div>
+
+             <!-- 34 -->
+            <div class="urination_loss">
+                <label for="urination_loss">
+                    Urination_loss :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="urination_loss"  required>
+                </label>
+             </div>
+
+
+            <!-- 35 -->
+            <div class="slow_heart_rate">
+                <label for="slow_heart_rate">
+                    Slow_heart_rate :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="slow_heart_rate"  required>
+                </label>
+             </div>
+
+             <!-- 36 -->
+             <div class="abdominal_pain">
+                <label for="abdominal_pain">
+                    Abdominal_pain :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="abdominal_pain"  required>
+                </label>
+             </div>
+
+             <!-- 37 -->
+             <div class="light_sensitivity">
+                <label for="light_sensitivity">
+                    Light_sensitivity :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="light_sensitivity"  required>
+                </label>
+             </div>
+
+             <!-- 38 -->
+             <div class="yellow_skin">
+                <label for="yellow_skin">
+                    Yellow_skin :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="yellow_skin"  required>
+                </label>
+             </div>
+
+             <!-- 39 -->
+             
+             <div class="yellow_eyes">
+                <label for="yellow_eyes">
+                    yellow_eyes :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="yellow_eyes"  required>
+                </label>
+             </div>
+
+             <!-- 40 -->
+             <div class="facial_distortion">
+                <label for="facial_distortion">
+                    Facial_distortion :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="facial_distortion"  required>
+                </label>
+             </div>
+             
+
+             <!-- 41 -->
+             <div class="microcephaly">
+                <label for="microcephaly">
+                    Microcephaly :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="microcephaly"  required>
+                </label>
+             </div>
+
+             <!-- 42 -->
+             <div class="rigor">
+                <label for="rigor">
+                    Rigor :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="rigor"  required>
+                </label>
+             </div>
+
+             <!-- 43 -->
+             <div class="bitter_tongue">
+                <label for="bitter_tongue">
+                    Bitter_tongue :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="bitter_tongue"  required>
+                </label>
+             </div>
+
+             <!-- 44 -->
+             <div class="convulsion">
+                <label for="convulsion">
+                    Convulsion :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="convulsion"  required>
+                </label>
+             </div>
+
+             <!-- 45 -->
+             <div class="anemia">
+                <label for="anemia">
+                    Anemia :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="anemia"  required>
+                </label>
+             </div>
+
+              <!-- 46 -->
+              <div class="cocacola_urine">
+                <label for="cocacola_urine">
+                    Cocacola_urine :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="cocacola_urine"  required>
+                </label>
+             </div>
+
+              <!-- 47 -->
+              <div class="hypoglycemia">
+                <label for="hypoglycemia">
+                    Hypoglycemia :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="hypoglycemia"  required>
+                </label>
+             </div>
+
+              <!-- 48 -->
+              <div class="prostraction">
+                <label for="prostraction">
+                    Prostraction :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="prostraction"  required>
+                </label>
+             </div>
+
+              <!-- 49 -->
+              <div class="hyperpyrexia">
+                <label for="hyperpyrexia">
+                    Hyperpyrexia :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="hyperpyrexia"  required>
+                </label>
+             </div>
+
+                <!-- 50 -->
+                <div class="stiff_neck">
+                    <label for="stiff_neck">
+                        Stiff_neck :
+                        <p>[0 for no and 1 for yes]</p>
+                        <input type="text" name="stiff_neck"  required>
+                    </label>
+                </div>
+
+               <!-- 51 -->
+               <div class="irritability">
+                <label for="irritability">
+                    Irritability :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="irritability"  required>
+                </label>
+             </div>
+
+               <!-- 52 -->
+               <div class="confusion">
+                <label for="confusion">
+                    Confusion :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="confusion"  required>
+                </label>
+             </div>
+
+               <!-- 53 -->
+               <div class="tremor">
+                <label for="tremor">
+                    Tremor :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="tremor"  required>
+                </label>
+             </div>
+
+               <!-- 54 -->
+               <div class="paralysis">
+                <label for="paralysis">
+                    Paralysis :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="paralysis"  required>
+                </label>
+             </div>
+
+               <!-- 55 -->
+               <div class="lymph_swells">
+                <label for="lymph_swells">
+                    Lymph_swells :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="lymph_swells"  required>
+                </label>
+             </div>
+
+               <!-- 56 -->
+               <div class="breathing_restriction">
+                <label for="breathing_restriction">
+                    Breathing_restriction :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="breathing_restriction"  required>
+                </label>
+             </div>
+
+               <!-- 57 -->
+               <div class="toe_inflammation">
+                <label for="toe_inflammation">
+                    Toe_inflammation :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="toe_inflammation"  required>
+                </label>
+             </div>
+
+
+               <!-- 58 -->
+               <div class="finger_inflammation">
+                <label for="finger_inflammation">
+                    Finger_inflammation :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="finger_inflammation"  required>
+                </label>
+             </div>
+
+              <!-- 59 -->
+              <div class="lips_irritation">
+                <label for="lips_irritation">
+                    Lips_irritation :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="lips_irritation"  required>
+                </label>
+             </div>
+
+              <!-- 60 -->
+              <div class="itchiness">
+                <label for="itchiness">
+                    Itchiness :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="itchiness"  required>
+                </label>
+             </div>
+
+              <!-- 61 -->
+              <div class="ulcers">
+                <label for="ulcers">
+                    Ulcers :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="ulcers"  required>
+                </label>
+             </div>
+
+
+              <!-- 62 -->
+              <div class="toenail_loss">
+                <label for="toenail_loss">
+                    toenail_loss :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="toenail_loss"  required>
+                </label>
+             </div>
+
+
+              <!-- 63 -->
+              <div class="speech_problem">
+                <label for="speech_problem">
+                    Speech_problem :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="speech_problem"  required>
+                </label>
+             </div>
+
+              <!-- 64 -->
+              <div class="bullseye_rash">
+                <label for="bullseye_rash">
+                    Bullseye_rash :
+                    <p>[0 for no and 1 for yes]</p>
+                    <input type="text" name="bullseye_rash"  required>
+                </label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+       </div>
+    </div>
+    <div class="container themed-container"><h1 style="text-align: center; color:black; font-size:2vmax;">{{ans}}</h1></div>
+    <p style="text-align: center; color:black;font-size:1vmax; ">Click <a href="https://www.who.int/news-room/fact-sheets/detail/vector-borne-diseases">here</a> to learn more about Vector-Borne Diseases</p>
+    <p style="text-align: center; color:black;font-size:1vmax; ">&copy;MediPred.com</p>
+    </div>
+
+    </div>
+</body>
+</html>
